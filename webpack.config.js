@@ -9,7 +9,7 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   inject: 'body'
 })
 
-
+const _PORT = 9998;
 const SRC_DIR =  path.join(__dirname, 'src/client');
 const DEST_DIR =  path.join(__dirname, 'dest/client');
 
@@ -21,7 +21,7 @@ module.exports = {
   },
   devServer: {
     inline:true,
-    port: 9998
+    port: _PORT
   },
   module:{
     loaders:[
